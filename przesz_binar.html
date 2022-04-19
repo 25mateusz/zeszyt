@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projektowanie oprogramowania</title>
+        <meta charset="utf-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'> 
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header id="header" class="header">
+            
+            
+            <b style="text-transform:uppercase;">przeszukiwanie binarne</b>
+        </header>
+
+
+        <div class="title_screen">
+            <span class="title">przeszukiwanie binarne</span>
+
+        </div>
+
+        <div class="buttons_grid">
+            <a href="index.html">
+                <div class="bg_button" style="background-image: url(images/algorytmy/robot.jpg);">
+                    <div class="button" id="button">Strona główna</div>
+                </div>
+            </a>
+                <br>
+            <a href="algorytmika.html">
+                <div class="bg_button" style="background-image: url(images/algorytmy/robot.jpg);">
+                    <div class="button" id="button">Algorytmika</div>
+                </div>
+            </a>
+                <br>
+            <a href="schem_blok.html">
+                <div class="bg_button" style="background-image: url(images/schematy_blokowe/start_stop.jpg);">
+                    <div class="button" id="button">Schematy blokowe</div>
+                </div>
+            </a>
+            <br>
+            <a href="przesz_linio.html">
+                <div class="bg_button" style="background-image: url(images/przesz_linio/laptop.jpg);">
+                    <div class="button" id="button">Przeszukiwanie liniowe</div>
+                </div>
+            </a>
+            <br>
+            <a href="przesz_binar.html">
+                <div class="bg_button" style="background-image: url(images/przesz_binar/klawiatura.jpg);">
+                    <div class="button" id="button">Przeszukiwanie binarne</div>
+                </div>
+            </a>
+            <br>
+            <a href="sort_bubble.html">
+                <div class="bg_button" style="background-image: url(images/sort_bubble/bubble_sort.gif);">
+                    <div class="button" id="button">Sortowanie bąbelkowe</div>
+                </div>
+            </a>
+            <br>
+            <a href="sort_select.html">
+                <div class="bg_button" style="background-image: url(images/sort_select/select_sort.gif);">
+                    <div class="button" id="button">Sortowanie przez wybór</div>
+                </div>
+            </a>
+        </div>
+        
+        <div class="content">
+            <h1>Definicja</h1>
+            Wyszukiwanie binarne – algorytm opierający się na metodzie dziel i zwyciężaj, który w czasie logarytmicznym stwierdza, czy szukany element znajduje się w uporządkowanej tablicy i jeśli się znajduje, podaje jego indeks. Np. jeśli tablica zawiera milion elementów, wyszukiwanie binarne musi sprawdzić maksymalnie 20 elementów (log2 1'000'000 ≈ 20) w celu znalezienia żądanej wartości. Dla porównania wyszukiwanie liniowe wymaga w najgorszym przypadku przejrzenia wszystkich elementów tablicy.
+        
+            <h1>Zasada działania algorytmu</h1>
+            Uporządkowana tablica jest dzielona na coraz mniejsze przedziały do momentu, gdy przedział osiągnie długość jeden, kiedy możemy jednym sprawdzeniem określić, czy element znajduje się w tablicy.
+            <br><br>
+            W pojedynczym kroku rozważa się jeden przedział charakteryzowany dwoma indeksami: początkowym a i końcowym b. Algorytm rozpoczyna wyszukiwanie od całej tablicy.
+            <br><br>
+            Następnie wyznaczany jest środek tego przedziału c = [(a + b) / 2].
+            <br><br>
+            Przedział jest zawężany – dzięki uporządkowaniu danych wiadomo, że albo poszukiwany element może znajdować się w indeksach [a;c] albo za nim. Innymi słowy wybór ogranicza się do przedziału [a,c] gdy poszukiwany element jest mniejszy lub równy zapisanemu pod indeksem c, albo [c + 1,b] w przeciwnym razie.
+        </div>
+        
+        <br>
+        <br>
+        <br>
+    </body>
+</html>

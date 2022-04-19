@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projektowanie oprogramowania</title>
+        <meta charset="utf-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'> 
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header id="header" class="header">
+            
+            
+            <b style="text-transform:uppercase;">algorytmika</b>
+        </header>
+
+
+        <div class="title_screen">
+            <span class="title">algorytmika</span>
+
+        </div>
+
+        <div class="buttons_grid">
+            <a href="index.html">
+                <div class="bg_button" style="background-image: url(images/algorytmy/robot.jpg);">
+                    <div class="button" id="button">Strona główna</div>
+                </div>
+            </a>
+                <br>
+            <a href="algorytmika.html">
+                <div class="bg_button" style="background-image: url(images/algorytmy/robot.jpg);">
+                    <div class="button" id="button">Algorytmika</div>
+                </div>
+            </a>
+                <br>
+            <a href="schem_blok.html">
+                <div class="bg_button" style="background-image: url(images/schematy_blokowe/start_stop.jpg);">
+                    <div class="button" id="button">Schematy blokowe</div>
+                </div>
+            </a>
+            <br>
+            <a href="przesz_linio.html">
+                <div class="bg_button" style="background-image: url(images/przesz_linio/laptop.jpg);">
+                    <div class="button" id="button">Przeszukiwanie liniowe</div>
+                </div>
+            </a>
+            <br>
+            <a href="przesz_binar.html">
+                <div class="bg_button" style="background-image: url(images/przesz_binar/klawiatura.jpg);">
+                    <div class="button" id="button">Przeszukiwanie binarne</div>
+                </div>
+            </a>
+            <br>
+            <a href="sort_bubble.html">
+                <div class="bg_button" style="background-image: url(images/sort_bubble/bubble_sort.gif);">
+                    <div class="button" id="button">Sortowanie bąbelkowe</div>
+                </div>
+            </a>
+            <br>
+            <a href="sort_select.html">
+                <div class="bg_button" style="background-image: url(images/sort_select/select_sort.gif);">
+                    <div class="button" id="button">Sortowanie przez wybór</div>
+                </div>
+            </a>
+        </div>
+        
+        <div class="content">
+            <h1>Definicja</h1>
+            Przeszukiwanie liniowe (lub wyszukiwanie sekwencyjne) – najprostszy algorytm wyszukiwania informacji w ciągu danych, np. zapisanych w tablicy lub na liście. Polega na porównywaniu żądanego klucza z kolejnymi kluczami z sekwencji danych – wyszukiwanie kończy się powodzeniem, gdy zostanie znaleziony klucz, albo niepowodzeniem, gdy zostaną przejrzane wszystkie klucze.
+            <br><h1>Pseudokod</h1>
+            <div class="pseudocode">
+        szukany_klucz := określona wartość;<br>
+        znaleziony_indeks := ?;<br>
+        for index := 1 to n do<br>
+            if tablica[index].klucz = szukany_klucz then<br>
+            begin<br>
+                //znaleziono element o podanym kluczu, zapamiętujemy pozycję w tablicy<br>
+                znaleziony_indeks := index;<br>
+                break; //koniec iterowania<br>
+            end;<br>
+            </div>
+
+        Wyszukiwanie liniowe może być jedynym sposobem wyszukiwania, gdy nie wiadomo niczego na temat kolejności kluczy.
+
+        Dla dużej liczby danych algorytm jest bardzo nieefektywny, jednak gdy danych jest względnie mało, jest z powodzeniem stosowany (np. w tablicach mieszających, w których problem kolizji rozwiązuje się metodą łańcuchową).
+
+        
+            </div>
+            <br>
+            <br>
+            <br>
+    </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projektowanie oprogramowania</title>
+        <meta charset="utf-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'> 
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header id="header" class="header">
+            
+            
+            <b style="text-transform:uppercase;">sortowanie przez wybór</b>
+        </header>
+
+
+        <div class="title_screen">
+            <span class="title">sortowanie przez wybór</span>
+
+        </div>
+
+        <div class="buttons_grid">
+            <a href="index.html">
+                <div class="bg_button" style="background-image: url(images/algorytmy/robot.jpg);">
+                    <div class="button" id="button">Strona główna</div>
+                </div>
+            </a>
+                <br>
+            <a href="algorytmika.html">
+                <div class="bg_button" style="background-image: url(images/algorytmy/robot.jpg);">
+                    <div class="button" id="button">Algorytmika</div>
+                </div>
+            </a>
+                <br>
+            <a href="schem_blok.html">
+                <div class="bg_button" style="background-image: url(images/schematy_blokowe/start_stop.jpg);">
+                    <div class="button" id="button">Schematy blokowe</div>
+                </div>
+            </a>
+            <br>
+            <a href="przesz_linio.html">
+                <div class="bg_button" style="background-image: url(images/przesz_linio/laptop.jpg);">
+                    <div class="button" id="button">Przeszukiwanie liniowe</div>
+                </div>
+            </a>
+            <br>
+            <a href="przesz_binar.html">
+                <div class="bg_button" style="background-image: url(images/przesz_binar/klawiatura.jpg);">
+                    <div class="button" id="button">Przeszukiwanie binarne</div>
+                </div>
+            </a>
+            <br>
+            <a href="sort_bubble.html">
+                <div class="bg_button" style="background-image: url(images/sort_bubble/bubble_sort.gif);">
+                    <div class="button" id="button">Sortowanie bąbelkowe</div>
+                </div>
+            </a>
+            <br>
+            <a href="sort_select.html">
+                <div class="bg_button" style="background-image: url(images/sort_select/select_sort.gif);">
+                    <div class="button" id="button">Sortowanie przez wybór</div>
+                </div>
+            </a>
+        </div>
+        
+        <div class="content">
+            <h1>Definicja</h1>
+Sortowanie przez wybór - jedna z prostszych metod sortowania o złożoności O(n2). Polega na wyszukaniu elementu mającego się znaleźć na żądanej pozycji i zamianie miejscami z tym, który jest tam obecnie. Operacja jest wykonywana dla wszystkich indeksów sortowanej tablicy.
+<h1>Działanie algorytmu</h1><br>
+1.wyszukaj minimalną wartość z tablicy spośród elementów od i do końca tablicy<br><br>
+2.zamień wartość minimalną, z elementem na pozycji i
+Gdy zamiast wartości minimalnej wybierana będzie maksymalna, wówczas tablica będzie posortowana od największego do najmniejszego elementu.
+Algorytm jest niestabilny. Przykładowa lista to: [2a,2b,1] → [1,2b,2a] (gdzie 2b=2a)
+        </div>
+        
+        <br>
+        <br>
+        <br>
+    </body>
+</html>
